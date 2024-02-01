@@ -1,0 +1,137 @@
+.container--upper{
+    max-width: $mobile;
+    width: 100%;
+    padding-top: 86px;
+    margin: 0 auto;
+    
+    @media screen and (max-width: $pre-tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+        max-width: $tablet;
+        padding-top: 98px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+        padding-top: 170px;
+    }
+    }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 40px;
+
+    border-radius: 25px;
+    background: $selection-color;
+    box-shadow: 10px 15px 25px 0px #E8B7B773;
+
+    color: $white-color;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+
+    &:hover,
+    &:focus {
+        color: $selection-color;
+        background: $white-color;
+    }
+
+    &:active {
+        background: $selection-color;
+        color: $white-color;
+        border: 1px solid pink;
+        box-shadow: 0px 4px 4px 0px #6B424240 inset;
+    }
+}
+
+.hero{
+    &__head{
+        width: 280px;
+
+        font-family: Montserrat Alternates;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            width: 320px;
+
+            font-size: 30px;
+            line-height: 1.23;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            width: 758px;
+
+            font-size: 60px;
+            line-height: 1.08;
+        }
+    }
+
+    &__text{
+        padding-top: 18px;
+        padding-bottom: 28px;
+
+        font-family: Montserrat Alternates;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 0em;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            padding-top: 10px;
+            padding-bottom: 24px;
+
+            text-align: left;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            padding-top: 20px;
+            padding-bottom: 28px;
+
+            font-size: 24px;
+            line-height: 1.2;
+        }        
+    }
+}
+
+.socials{
+    max-width: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        transition: fill $timing-function;
+
+        .socials__link:hover &,
+        .socials__link:focus & {
+            fill: $selection-color;
+        }
+    }
+
+    &--upper{
+        margin-top: 28px;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: 20px;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            margin-top: 32px;
+        }
+    }
+}
