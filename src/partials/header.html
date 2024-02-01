@@ -1,27 +1,39 @@
-<header>
-  <a  href="#">
-    <svg width="106" height="46">
-      <use href="./images/svg/icons.svg#logo"></use>
-    </svg>
-  </a>
-  <button>
-    <svg width="32" height="32">
-      <use href="./images/svg/icons.svg#menu"></use>
-    </svg>
-  </button>
-  <div>
-    <button>
-      <svg width="32" height="32">
-        <use href="./images/svg/icons.svg#close"></use>
-      </svg>
-    </button>
-    <ul>
-      <li>About us</li>
-      <li>Program</li>
-      <li>Speaker</li>
-      <li>Price</li>
-      <li>Reviws</li>
-      <li>Contact</li>
-    </ul>
+<header class="header">
+  <div class="header__container">
+    <div class="header__menu">
+      <a class="header__link-logo" href="#">
+        <svg class="header__svg-logo" width="106" height="46">
+          <use href="./images/svg/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <button class="header__button-open">
+        <svg class="header__svg-open" width="32" height="32">
+          <use href="./images/svg/icons.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__box-menu">
+      <button class="header__button-close">
+        <svg class="header__svg-close" width="32" height="32">
+          <use href="./images/svg/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="header__list">
+        <li class="header__item">
+          <a aria-label="to about us section" href="#about-us" class="header__link">About us</a>
+        </li>
+        <li class="header__item">
+          <a aria-label="to program section" href="#program" class="header__link">Program</a>
+        </li>
+        <li class="header__item">
+          <a aria-label="to speaker section" href="#speaker" class="header__link">Speaker</a>
+        </li>
+        <li class="header__item"><a aria-label="to price section" href="#price" class="header__link">Price</a></li>
+        <li class="header__item"><a aria-label="to reviws section" href="#reviws" class="header__link">Reviws</a></li>
+        <li class="header__item">
+          <a aria-label="to contact section" href="#contact" class="header__link">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
