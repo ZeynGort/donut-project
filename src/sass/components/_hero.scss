@@ -59,29 +59,26 @@
 }
 
 .hero {
-  background-image: url('../images/donuts-bg-mobile.png'), url('../images/hero/glazed-donuts-in-boxes-mobile.jpg');
+  background-image: url('../images/hero/glazed-donuts-in-boxes-mobile.jpg');
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/donuts-bg-mobile@2x.png'),
-      url('../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg');
+    background-image: url('../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg');
   }
 
   @media screen and (min-width: $tablet) {
-    background-image: url('../images/donuts-bg-desktop.png'), url('../images/hero/glazed-donuts-in-boxes-tablet.jpg');
+    background-image: url('../images/hero/glazed-donuts-in-boxes-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/donuts-bg-desktop@2x.png'),
-        url('../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg');
+      background-image: url('../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg');
     }
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url('../images/donuts-bg-desktop.png'), url('../images/hero/glazed-donuts-in-boxes-desktop.jpg');
+    background-image: url('../images/hero/glazed-donuts-in-boxes-desktop.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/donuts-bg-desktop@2x.png'),
-        url('../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg');
+      background-image: url('../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg');
     }
   }
 
