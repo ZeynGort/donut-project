@@ -1,9 +1,11 @@
 a {
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -28,9 +30,11 @@ body {
     }
   }
 }
+
 body.noscroll {
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -40,11 +44,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 button {
   padding: 0;
   margin: 0;
@@ -52,28 +58,35 @@ button {
   background: none;
   cursor: pointer;
 }
+
 .section {
   padding-bottom: 40px;
+
   @media screen and (min-width: $tablet) {
     padding-bottom: 80px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 }
+
 .container {
   width: 100%;
   max-width: $mobile;
   padding-inline: 20px;
+
   @media screen and (min-width: $tablet) {
     padding-inline: 32px;
     max-width: $tablet;
   }
+
   @media screen and (min-width: $desktop) {
     padding-inline: 16px;
     max-width: $desktop;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -87,6 +100,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 textarea {
   resize: none;
 }

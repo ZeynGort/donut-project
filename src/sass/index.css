@@ -12,22 +12,32 @@ body {
   font-weight: 400;
   color: #3c322d;
   margin: 0;
-  background-image: url("../images/donuts-bg-mobile.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  background-image: url('../images/donuts-bg-mobile.png'),
+    linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   body {
-    background-image: url("../images/donuts-bg-mobile@2x.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+    background-image: url('../images/donuts-bg-mobile@2x.png'),
+      linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    background-image: url("../images/donuts-bg-desktop.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+    background-image: url('../images/donuts-bg-desktop.png'),
+      linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   body {
-    background-image: url("../images/donuts-bg-desktop@2x.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+    background-image: url('../images/donuts-bg-desktop@2x.png'),
+      linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
 
@@ -100,7 +110,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -109,65 +119,176 @@ textarea {
   resize: none;
 }
 
-.header {
-  position: absolute;
+.container--upper {
   max-width: 320px;
   width: 100%;
-}
-@media screen and (min-width: 1280px) {
-  .header__container {
-    display: flex;
-  }
-}
-.header__menu {
-  max-width: 280px;
-}
-.header__list {
+  padding-top: 86px;
+  padding-bottom: 8px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .header__button {
-    display: none;
-  }
-}
-.header__button:hover, .header__button:focus {
-  color: #f3848c;
-}
-.header__svg {
-  fill: currentColor;
-  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (max-width: 1279.98px) {
-  .header__box-menu {
+@media screen and (max-width: 767.98px) {
+  .container--upper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transform: translate(-101%, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 1;
+    align-items: center;
   }
 }
-.header__link {
-  display: inline-block;
-  color: #3c322d;
-  padding: 10px 28px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .container--upper {
+    margin: 0;
+    max-width: 768px;
+    padding-top: 98px;
+    padding-bottom: 43px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container--upper {
+    max-width: 1280px;
+    padding-top: 170px;
+    padding-bottom: 90px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #f3848c;
+  box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.4509803922);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+  color: #f3848c;
+  background-color: #ffffff;
+}
+.button:active {
+  background-color: #f3848c;
+  color: #ffffff;
+  border: 1px solid #f3848c;
+  box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.2509803922) inset;
+}
+
+.hero {
+  background-image: url('../images/hero/glazed-donuts-in-boxes-mobile.jpg');
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/hero/glazed-donuts-in-boxes-tablet.jpg');
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg');
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url('../images/hero/glazed-donuts-in-boxes-desktop.jpg');
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg');
+  }
+}
+.hero__head {
+  width: 280px;
   font-family: Montserrat Alternates;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.21;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
+  text-align: center;
 }
-.header__link:hover, .header__link:focus {
-  color: #ffffff;
-  box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
-  background: linear-gradient(180deg, rgba(248, 110, 103, 0.63), rgba(253, 86, 143, 0.86) 100%);
-}/*# sourceMappingURL=index.css.map */
+@media screen and (min-width: 768px) {
+  .hero__head {
+    width: 320px;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__head {
+    width: 758px;
+    font-size: 60px;
+    line-height: 1.08;
+  }
+}
+.hero__text {
+  padding-top: 18px;
+  padding-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    padding-top: 10px;
+    padding-bottom: 24px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    padding-top: 20px;
+    padding-bottom: 28px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.socials {
+  max-width: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.socials__icon {
+  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: #f3848c;
+}
+.socials--upper {
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .socials--upper {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .socials--upper {
+    margin-top: 32px;
+  }
+} /*# sourceMappingURL=index.css.map */
