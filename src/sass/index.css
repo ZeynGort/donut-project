@@ -12,23 +12,22 @@ body {
   font-weight: 400;
   color: #3C322D;
   margin: 0;
-  background: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  background-image: url("../images/donuts-bg-mobile.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   background-size: cover;
-  background-image: url("../images/donuts-bg-mobile.png");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   body {
-    background-image: url("../images/donuts-bg-mobile@2x.png");
+    background-image: url("../images/donuts-bg-mobile@2x.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    background-image: url("../images/donuts-bg-desktop.png");
+    background-image: url("../images/donuts-bg-desktop.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   body {
-    background-image: url("../images/donuts-bg-desktop@2x.png");
+    background-image: url("../images/donuts-bg-desktop@2x.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   }
 }
 
@@ -114,6 +113,7 @@ textarea {
   max-width: 320px;
   width: 100%;
   padding-top: 86px;
+  padding-bottom: 8px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767.98px) {
@@ -128,12 +128,14 @@ textarea {
     margin: 0;
     max-width: 768px;
     padding-top: 98px;
+    padding-bottom: 43px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container--upper {
     max-width: 1280px;
     padding-top: 170px;
+    padding-bottom: 90px;
   }
 }
 
@@ -144,24 +146,54 @@ textarea {
   width: 145px;
   height: 40px;
   border-radius: 25px;
-  background: #F3848C;
+  background-color: #F3848C;
   box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.4509803922);
   color: #FFFFFF;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0em;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
   color: #F3848C;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 .button:active {
-  background: #F3848C;
+  background-color: #F3848C;
   color: #FFFFFF;
-  border: 1px solid pink;
+  border: 1px solid #F3848C;
   box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.2509803922) inset;
 }
 
+.hero {
+  background-image: url("../images/hero/glazed-donuts-in-boxes-mobile.jpg");
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg");
+  }
+}
 .hero__head {
   width: 280px;
   font-family: Montserrat Alternates;
