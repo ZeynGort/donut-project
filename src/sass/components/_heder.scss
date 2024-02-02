@@ -12,6 +12,7 @@
   &__menu {
     max-width: 280px;
   }
+
   &__list {
     margin: 0 auto;
     display: flex;
@@ -19,7 +20,35 @@
     gap: 20px;
     align-items: center;
   }
-  &__item {
+
+  &__button {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      color: $selection-color;
+    }
+  }
+
+  &__svg {
+    fill: currentColor;
+    transition: fill $timing-function;
+  }
+
+  &__box-menu {
+    @media screen and (max-width: $pre-desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: translate(-101%, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh;
+      z-index: 1;
+    }
   }
 
   &__link {
