@@ -1,171 +1,169 @@
-.container--upper{
-    max-width: $mobile;
-    width: 100%;
-    padding-top: 86px;
-    padding-bottom: 8px;
-    margin: 0 auto;
-    
-    @media screen and (max-width: $pre-tablet) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.container--upper {
+  max-width: $mobile;
+  width: 100%;
+  padding-top: 86px;
+  padding-bottom: 8px;
+  margin: 0 auto;
 
-    @media screen and (min-width: $tablet) {
-        margin: 0;
-        max-width: $tablet;
-        padding-top: 98px;
-        padding-bottom: 43px;
-    }
+  @media screen and (max-width: $pre-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    @media screen and (min-width: $desktop) {
-        max-width: $desktop;
-        padding-top: 170px;
-        padding-bottom: 90px;
-    }
-    }
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    max-width: $tablet;
+    padding-top: 98px;
+    padding-bottom: 43px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding-top: 170px;
+    padding-bottom: 90px;
+  }
+}
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 145px;
-    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 40px;
 
-    border-radius: 25px;
+  border-radius: 25px;
+  background-color: $selection-color;
+  box-shadow: 10px 15px 25px 0px #e8b7b773;
+
+  color: $white-color;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+
+  transition: color $timing-function, background-color $timing-function, border $timing-function,
+    box-shadow $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $selection-color;
+    background-color: $white-color;
+  }
+
+  &:active {
     background-color: $selection-color;
-    box-shadow: 10px 15px 25px 0px #E8B7B773;
-
     color: $white-color;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0em;
-
-    transition: color $timing-function, background-color $timing-function, border $timing-function, box-shadow $timing-function;
-
-    &:hover,
-    &:focus {
-        color: $selection-color;
-        background-color: $white-color;
-    }
-
-    &:active {
-        background-color: $selection-color;
-        color: $white-color;
-        border: 1px solid $selection-color;
-        box-shadow: 0px 4px 4px 0px #6B424240 inset;
-    }
+    border: 1px solid $selection-color;
+    box-shadow: 0px 4px 4px 0px #6b424240 inset;
+  }
 }
 
-.hero{
-    background-image: url('../images/hero/glazed-donuts-in-boxes-mobile.jpg');
-    background-size: cover;
+.hero {
+  background-image: url('../images/donuts-bg-mobile.png'), url('../images/hero/glazed-donuts-in-boxes-mobile.jpg');
+  background-size: cover;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/donuts-bg-mobile@2x.png'),
+      url('../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/donuts-bg-desktop.png'), url('../images/hero/glazed-donuts-in-boxes-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/donuts-bg-desktop@2x.png'),
+        url('../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg');
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/donuts-bg-desktop.png'), url('../images/hero/glazed-donuts-in-boxes-desktop.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/donuts-bg-desktop@2x.png'),
+        url('../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg');
+    }
+  }
+
+  &__head {
+    width: 280px;
+
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    text-align: center;
 
     @media screen and (min-width: $tablet) {
-        background-image: url('../images/hero/glazed-donuts-in-boxes-tablet.jpg');
+      width: 320px;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg');
-        }
+      font-size: 30px;
+      line-height: 1.23;
+      letter-spacing: 0em;
+      text-align: left;
     }
 
     @media screen and (min-width: $desktop) {
-        background-image: url('../images/hero/glazed-donuts-in-boxes-desktop.jpg');
+      width: 758px;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg');
-        }
+      font-size: 60px;
+      line-height: 1.08;
+    }
+  }
+
+  &__text {
+    padding-top: 18px;
+    padding-bottom: 28px;
+
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 10px;
+      padding-bottom: 24px;
+
+      text-align: left;
     }
 
-    &__head{
-        width: 280px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 20px;
+      padding-bottom: 28px;
 
-        font-family: Montserrat Alternates;
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 1.21;
-        letter-spacing: -0.03em;
-        text-align: center;
-
-        @media screen and (min-width: $tablet) {
-            width: 320px;
-
-            font-size: 30px;
-            line-height: 1.23;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-        
-        @media screen and (min-width: $desktop) {
-            width: 758px;
-
-            font-size: 60px;
-            line-height: 1.08;
-        }
+      font-size: 24px;
+      line-height: 1.2;
     }
-
-    &__text{
-        padding-top: 18px;
-        padding-bottom: 28px;
-
-        font-family: Montserrat Alternates;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.25;
-        letter-spacing: 0em;
-        text-align: center;
-
-        @media screen and (min-width: $tablet) {
-            padding-top: 10px;
-            padding-bottom: 24px;
-
-            text-align: left;
-        }
-        
-        @media screen and (min-width: $desktop) {
-            padding-top: 20px;
-            padding-bottom: 28px;
-
-            font-size: 24px;
-            line-height: 1.2;
-        }        
-    }
+  }
 }
 
-.socials{
-    max-width: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.socials {
+  max-width: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__icon {
-        transition: fill $timing-function;
+  &__icon {
+    transition: fill $timing-function;
 
-        .socials__link:hover &,
-        .socials__link:focus & {
-            fill: $selection-color;
-        }
+    .socials__link:hover &,
+    .socials__link:focus & {
+      fill: $selection-color;
+    }
+  }
+
+  &--upper {
+    margin-top: 28px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 20px;
     }
 
-    &--upper{
-        margin-top: 28px;
-
-        @media screen and (min-width: $tablet) {
-            margin-top: 20px;
-        }
-        
-        @media screen and (min-width: $desktop) {
-            margin-top: 32px;
-        }
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
     }
+  }
 }
