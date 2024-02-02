@@ -1,17 +1,40 @@
 a {
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 body {
   font-family: Montserrat, sans-serif;
+  font-weight: 400;
   color: $main-text-color;
   margin: 0;
+  background-image: url('../images/donuts-bg-mobile.png'), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/donuts-bg-mobile@2x.png'), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/donuts-bg-desktop.png'), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/donuts-bg-desktop@2x.png'), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+    }
+  }
 }
+
 body.noscroll {
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -21,11 +44,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 button {
   padding: 0;
   margin: 0;
@@ -33,15 +58,35 @@ button {
   background: none;
   cursor: pointer;
 }
+
 .section {
   padding-bottom: 40px;
+
   @media screen and (min-width: $tablet) {
     padding-bottom: 80px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-bottom: 100px;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: $mobile;
+  padding-inline: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-inline: 32px;
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-inline: 16px;
+    max-width: $desktop;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,6 +100,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 textarea {
   resize: none;
 }
