@@ -77,6 +77,7 @@ button {
   width: 100%;
   max-width: 320px;
   padding-inline: 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -114,7 +115,6 @@ textarea {
   width: 100%;
   padding-top: 86px;
   padding-bottom: 8px;
-  margin: 0 auto;
 }
 @media screen and (max-width: 767.98px) {
   .container--upper {
@@ -268,5 +268,87 @@ textarea {
 @media screen and (min-width: 1280px) {
   .socials--upper {
     margin-top: 32px;
+  }
+}
+
+.about {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    margin-top: 64px;
+  }
+}
+.about__container {
+  display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    gap: 32px;
+  }
+}
+.about__image-box {
+  display: flex;
+  align-items: center;
+}
+.about__image {
+  width: 280px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .about__image {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__image {
+    width: 608px;
+  }
+}
+.about__head {
+  margin-bottom: 8px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .about__head {
+    margin-top: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__head {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+.about__text {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.about__text:not(:last-child) {
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    font-size: 18px;
+    line-height: 1.22;
   }
 }/*# sourceMappingURL=index.css.map */
