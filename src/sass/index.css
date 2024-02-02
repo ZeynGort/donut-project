@@ -10,7 +10,7 @@ li {
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  color: #3C322D;
+  color: #3c322d;
   margin: 0;
   background-image: url("../images/donuts-bg-mobile.png"), linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
   background-size: cover;
@@ -110,6 +110,154 @@ textarea {
   resize: none;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(243, 132, 139, 0.3254901961);
+  border: 1px solid rgba(234, 116, 124, 0.568627451);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(243, 132, 139, 0.6705882353);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    padding: 36px 16px;
+  }
+}
+.header__link-logo {
+  position: relative;
+  z-index: 2;
+}
+.header__svg-logo {
+  width: 106px;
+  height: 46px;
+}
+@media screen and (min-width: 1280px) {
+  .header__svg-logo {
+    width: 158px;
+    height: 70px;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    padding: 24px 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    margin-right: 51px;
+  }
+}
+.header__button {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (min-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__button:focus {
+  color: #f3848c;
+}
+.header__svg {
+  display: block;
+  fill: currentColor;
+  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__svg[open=true] {
+  display: none;
+}
+.header__svg[close=true] {
+  display: none;
+}
+@media screen and (max-width: 1279.98px) {
+  .header__box-menu {
+    transform: translate(-101%, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .header__box-menu.open {
+    padding: 8px 10px;
+    transform: translate(0, 0);
+    background-size: cover;
+    background-color: #e5e2e3;
+    background-image: url("../images/donuts-bg-mobile.png");
+  }
+}
+@media screen and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1279.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (max-width: 1279.98px) and (min-resolution: 2dppx) {
+  .header__box-menu.open {
+    background-image: url("../images/donuts-bg-mobile@2x.png");
+  }
+}
+.header__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 112px;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    padding-top: 140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__list {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+.header__link {
+  display: inline-block;
+  color: #3c322d;
+  padding: 10px 28px;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 1280px) {
+  .header__link {
+    padding: 4px 8px;
+  }
+}
+.header__link:hover, .header__link:focus {
+  color: #ffffff;
+  box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+  background: linear-gradient(180deg, rgba(248, 110, 103, 0.63), rgba(253, 86, 143, 0.86) 100%);
+}
+
 .container--upper {
   max-width: 320px;
   width: 100%;
@@ -146,52 +294,52 @@ textarea {
   width: 145px;
   height: 40px;
   border-radius: 25px;
-  background-color: #F3848C;
+  background-color: #f3848c;
   box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.4509803922);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0em;
   transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
-  color: #F3848C;
-  background-color: #FFFFFF;
+  color: #f3848c;
+  background-color: #ffffff;
 }
 .button:active {
-  background-color: #F3848C;
-  color: #FFFFFF;
-  border: 1px solid #F3848C;
+  background-color: #f3848c;
+  color: #ffffff;
+  border: 1px solid #f3848c;
   box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.2509803922) inset;
 }
 
 .hero {
-  background-image: url("../images/hero/glazed-donuts-in-boxes-mobile.jpg");
+  background-image: url("../images/donuts-bg-mobile.png"), url("../images/hero/glazed-donuts-in-boxes-mobile.jpg");
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg");
+    background-image: url("../images/donuts-bg-mobile@2x.png"), url("../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet.jpg");
+    background-image: url("../images/donuts-bg-desktop.png"), url("../images/hero/glazed-donuts-in-boxes-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg");
+    background-image: url("../images/donuts-bg-desktop@2x.png"), url("../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop.jpg");
+    background-image: url("../images/donuts-bg-desktop.png"), url("../images/hero/glazed-donuts-in-boxes-desktop.jpg");
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg");
+    background-image: url("../images/donuts-bg-desktop@2x.png"), url("../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg");
   }
 }
 .hero__head {
@@ -255,7 +403,7 @@ textarea {
   transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
-  fill: #F3848C;
+  fill: #f3848c;
 }
 .socials--upper {
   margin-top: 28px;
