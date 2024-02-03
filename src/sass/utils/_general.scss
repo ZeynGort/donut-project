@@ -75,6 +75,7 @@ button {
   width: 100%;
   max-width: $mobile;
   padding-inline: 20px;
+  margin: 0 auto;
 
   @media screen and (min-width: $tablet) {
     padding-inline: 32px;
