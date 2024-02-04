@@ -440,7 +440,6 @@ textarea {
   }
 }
 
-<<<<<<< HEAD
 .about {
   margin-top: 20px;
 }
@@ -521,7 +520,9 @@ textarea {
   .about__text {
     font-size: 18px;
     line-height: 1.22;
-=======
+  }
+}
+
 .speakers__heder {
   font-family: Montserrat Alternates;
   font-size: 24px;
@@ -586,6 +587,5 @@ textarea {
   .speakers__text {
     font-size: 16px;
     line-height: 20px;
->>>>>>> 4781c6c949c99a89117bd0e2863880b64cc1f1eb
   }
 }/*# sourceMappingURL=index.css.map */
