@@ -1,4 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -424,14 +428,14 @@ textarea {
   font-family: Montserrat Alternates;
   font-size: 24px;
   font-weight: 500;
-  line-height: 29px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .speakers__heder {
     font-size: 32px;
-    line-height: 39px;
+    line-height: 1.21;
   }
 }
 .speakers__list {
@@ -455,34 +459,70 @@ textarea {
 .speakers__name {
   font-size: 16px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   margin-top: 12px;
 }
 @media screen and (min-width: 768px) {
   .speakers__name {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     margin-top: 20px;
   }
 }
 .speakers__text {
   font-size: 12px;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 1.25;
   text-align: center;
   margin-top: 12px;
 }
 @media screen and (min-width: 768px) {
   .speakers__text {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .speakers__text {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
+  }
+}
+
+.price__head {
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .price__head {
+    font-size: 32px;
+    line-height: 1.21;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__head {
+    margin-bottom: 28px;
+  }
+}
+.price__subscription {
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-align: center;
+  margin: 20px 0;
+}
+@media screen and (min-width: 1280px) {
+  .price__subscription {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 28px 0 40px;
   }
 }/*# sourceMappingURL=index.css.map */
