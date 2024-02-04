@@ -1,0 +1,113 @@
+.price {
+  &__head {
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 28px;
+    }
+  }
+  &__list-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @media screen and (min-width: $tablet) {
+      gap: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 32px;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 20px 18px 95px 8px;
+    border-radius: 25px;
+    box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+    background-color: rgb(250, 251, 251);
+    background-image: url(../images/price/colorful-and-tasty-donuts-mobile.png);
+    background-size: 200px, contain;
+    background-repeat: no-repeat;
+    background-position: left 50% bottom 95px;
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/price/colorful-and-tasty-donuts-mobile@2x.png);
+    }
+
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/price/colorful-and-tasty-donuts-tablet.png);
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/price/colorful-and-tasty-donuts-tablet@2x.png);
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      background-size: 300px, contain;
+      background-image: url(../images/price/colorful-and-tasty-donuts-desktop.png);
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/price/colorful-and-tasty-donuts-desktop@2x.png);
+      }
+    }
+
+    flex-basis: 100%;
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 2 * 14px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 2 * 32px) / 3);
+    }
+    &:focus,
+    &:hover {
+      box-sizing: border-box;
+      border: 1px solid rgb(243, 132, 140);
+    }
+  }
+  &__subscription {
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-align: center;
+    margin: 20px 0;
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.2;
+      margin: 28px 0 40px;
+    }
+  }
+  &__line {
+    display: flex;
+    margin-bottom: 12px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 14px;
+    }
+    &::before {
+      content: ' ';
+      padding: 12px;
+      margin-right: 10px;
+      background: url(../images/svg/chef.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      @media screen and (min-width: $desktop) {
+        margin-right: 16px;
+      }
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22;
+    text-align: left;
+  }
+  &__button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

@@ -1,4 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -573,14 +577,14 @@ textarea {
   font-family: Montserrat Alternates;
   font-size: 24px;
   font-weight: 500;
-  line-height: 29px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .speakers__heder {
     font-size: 32px;
-    line-height: 39px;
+    line-height: 1.21;
   }
 }
 .speakers__list {
@@ -604,34 +608,171 @@ textarea {
 .speakers__name {
   font-size: 16px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   margin-top: 12px;
 }
 @media screen and (min-width: 768px) {
   .speakers__name {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     margin-top: 20px;
   }
 }
 .speakers__text {
   font-size: 12px;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 1.25;
   text-align: center;
   margin-top: 12px;
 }
 @media screen and (min-width: 768px) {
   .speakers__text {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .speakers__text {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
   }
+}
+
+.price__head {
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .price__head {
+    font-size: 32px;
+    line-height: 1.21;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__head {
+    margin-bottom: 28px;
+  }
+}
+.price__list-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .price__list-box {
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__list-box {
+    gap: 32px;
+  }
+}
+.price__item {
+  position: relative;
+  padding: 20px 18px 95px 8px;
+  border-radius: 25px;
+  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+  background-color: rgb(250, 251, 251);
+  background-image: url(../images/price/colorful-and-tasty-donuts-mobile.png);
+  background-size: 200px, contain;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 95px;
+  flex-basis: 100%;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__item {
+    background-size: 300px, contain;
+    background-image: url(../images/price/colorful-and-tasty-donuts-desktop.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-desktop@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price__item {
+    flex-basis: calc((100% - 28px) / 3);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+.price__item:focus, .price__item:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(243, 132, 140);
+}
+.price__subscription {
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-align: center;
+  margin: 20px 0;
+}
+@media screen and (min-width: 1280px) {
+  .price__subscription {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 28px 0 40px;
+  }
+}
+.price__line {
+  display: flex;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .price__line {
+    margin-bottom: 14px;
+  }
+}
+.price__line::before {
+  content: " ";
+  padding: 12px;
+  margin-right: 10px;
+  background: url(../images/svg/chef.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+@media screen and (min-width: 1280px) {
+  .price__line::before {
+    margin-right: 16px;
+  }
+}
+.price__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: left;
+}
+.price__button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }/*# sourceMappingURL=index.css.map */
