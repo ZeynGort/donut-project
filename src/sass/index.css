@@ -504,6 +504,7 @@ textarea {
   .about__head {
     margin-bottom: 20px;
     font-size: 32px;
+    text-align: left;
   }
 }
 .about__text {
