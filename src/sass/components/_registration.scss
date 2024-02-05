@@ -138,6 +138,7 @@
     @media screen and (min-width: $tablet) {
       width: 250px;
       border-bottom: 1px solid $main-text-color;
+      color: $main-text-color;
     }
     @media screen and (min-width: $desktop) {
       width: 212px;

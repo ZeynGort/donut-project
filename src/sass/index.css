@@ -83,6 +83,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 .section {
   padding-bottom: 40px;
 }
@@ -330,6 +334,7 @@ textarea {
 .button:hover, .button:focus {
   color: #f3848c;
   background-color: #ffffff;
+  border: 1px solid #f3848c;
 }
 .button:active {
   background-color: #f3848c;
@@ -1069,4 +1074,320 @@ textarea {
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 1280px) {
+  .registration__container {
+    width: 1034px;
+  }
+}
+.registration__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__head {
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+.registration__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 8px 32px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(61, 44, 44, 0.6);
+  background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__box {
+    flex-direction: row;
+    padding: 40px 40px 40px 62px;
+    background-color: #fff;
+    background-size: 570px, auto, contain, contain;
+    background-repeat: no-repeat;
+    background-position: left, right, right;
+    background-image: url(../images/registration/cloud.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/cloud@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__box {
+    padding: 40px 40px 40px 214px;
+    background-size: 972px, auto, contain, contain;
+    background-image: url(../images/registration/cloudBig.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/cloudBig@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+.registration__date-time {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__date-time {
+    color: #3c322d;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__date-time {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 28px;
+  }
+}
+.registration__form {
+  border-top: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .registration__form {
+    border-top: none;
+    border-left: 1px solid #3c322d;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form {
+    padding-left: 28px;
+  }
+}
+.registration__form-head {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__form-head {
+    text-align: left;
+    color: #3c322d;
+    margin-top: 0;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form-head {
+    width: 268px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.registration__list-field {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__list-field {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__list-field {
+    margin-top: 24px;
+  }
+}
+.registration__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__field:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.registration__input {
+  color: #ffffff;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .registration__input {
+    width: 250px;
+    border-bottom: 1px solid #3c322d;
+    color: #3c322d;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__input {
+    width: 212px;
+  }
+}
+.registration__input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+.registration__input::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .registration__input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+  .registration__input::placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+}
+.registration__button {
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .registration__button {
+    margin-top: 0;
+    margin-left: 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__button {
+    margin-left: 0;
+  }
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form:invalid button {
+  pointer-events: none;
+  border-color: rgba(255, 209, 212, 0.7411764706);
+  background-color: rgba(255, 209, 212, 0.7411764706);
+}
+.contact__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__head {
+    font-size: 32px;
+  }
+}
+.contact__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__text {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.contact__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.contact__input {
+  width: 280px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c322d;
+}
+.contact__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input:not(:-moz-placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:-moz-placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:-moz-placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+.contact__input:not(:placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+@media screen and (min-width: 768px) {
+  .contact__input {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__input {
+    width: 394px;
+  }
+}
+.contact__button {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .contact__button {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__button {
+    margin-bottom: 38px;
+  }
 }/*# sourceMappingURL=index.css.map */
