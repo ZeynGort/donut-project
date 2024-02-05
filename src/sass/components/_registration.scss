@@ -157,6 +157,7 @@
   }
   &__button {
     margin-top: 32px;
+    cursor: pointer;
     @media screen and (min-width: $tablet) {
       margin-top: 0;
       margin-left: 74px;
