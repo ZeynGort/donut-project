@@ -1069,4 +1069,202 @@ textarea {
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 1280px) {
+  .registration__container {
+    width: 1034px;
+  }
+}
+.registration__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__head {
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+.registration__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 8px 32px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(61, 44, 44, 0.6);
+  background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__box {
+    flex-direction: row;
+    padding: 40px 40px 40px 62px;
+    background-color: #fff;
+    background-size: 570px, auto, contain, contain;
+    background-repeat: no-repeat;
+    background-position: left, right, right;
+    background-image: url(../images/registration/cloud.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/cloud@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__box {
+    padding: 40px 40px 40px 214px;
+    background-size: 972px, auto, contain, contain;
+    background-image: url(../images/registration/cloudBig.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/cloudBig@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+.registration__date-time {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__date-time {
+    color: #3c322d;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__date-time {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 28px;
+  }
+}
+.registration__form {
+  border-top: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .registration__form {
+    border-top: none;
+    border-left: 1px solid #3c322d;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form {
+    padding-left: 28px;
+  }
+}
+.registration__form-head {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__form-head {
+    text-align: left;
+    color: #3c322d;
+    margin-top: 0;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form-head {
+    width: 268px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.registration__list-field {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__list-field {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__list-field {
+    margin-top: 24px;
+  }
+}
+.registration__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__field:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.registration__input {
+  color: #ffffff;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .registration__input {
+    width: 250px;
+    border-bottom: 1px solid #3c322d;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__input {
+    width: 212px;
+  }
+}
+.registration__input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+.registration__input::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .registration__input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+  .registration__input::placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+}
+.registration__button {
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .registration__button {
+    margin-top: 0;
+    margin-left: 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__button {
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=index.css.map */
