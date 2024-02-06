@@ -83,6 +83,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 .section {
   padding-bottom: 40px;
 }
@@ -330,6 +334,7 @@ textarea {
 .button:hover, .button:focus {
   color: #f3848c;
   background-color: #ffffff;
+  border: 1px solid #f3848c;
 }
 .button:active {
   background-color: #f3848c;
@@ -1225,6 +1230,7 @@ textarea {
   .registration__input {
     width: 250px;
     border-bottom: 1px solid #3c322d;
+    color: #3c322d;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1256,6 +1262,7 @@ textarea {
 }
 .registration__button {
   margin-top: 32px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .registration__button {
@@ -1266,5 +1273,122 @@ textarea {
 @media screen and (min-width: 1280px) {
   .registration__button {
     margin-left: 0px;
+  }
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form:invalid button {
+  pointer-events: none;
+  border-color: rgba(255, 209, 212, 0.7411764706);
+  background-color: rgba(255, 209, 212, 0.7411764706);
+}
+.contact__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__head {
+    font-size: 32px;
+  }
+}
+.contact__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__text {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.contact__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.contact__input {
+  width: 280px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c322d;
+}
+.contact__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input:not(:-moz-placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:-moz-placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:-moz-placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+.contact__input:not(:placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+@media screen and (min-width: 768px) {
+  .contact__input {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__input {
+    width: 394px;
+  }
+}
+.contact__button {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .contact__button {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__button {
+    margin-bottom: 38px;
   }
 }/*# sourceMappingURL=index.css.map */
