@@ -1,0 +1,35 @@
+.footer {
+  padding-bottom: 50px;
+  @media screen and (max-width: $pre-tablet) {
+    background-repeat: no-repeat;
+    background-position: 50% 18px;
+    background-size: 60px 40px;
+    background-image: url(../images/colorful-and-tasty-donuts-mobile.png);
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/colorful-and-tasty-donuts-mobile@2x.png);
+    }
+  }
+  &__address {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    color: $main-text-color;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    &:hover,
+    &:focus {
+      color: $selection-color;
+    }
+  }
+  &__icon {
+    vertical-align: middle;
+    fill: currentColor;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+}

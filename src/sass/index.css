@@ -5,6 +5,7 @@ html {
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
 li {
@@ -1262,6 +1263,7 @@ textarea {
 }
 .registration__button {
   margin-top: 32px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .registration__button {
@@ -1271,7 +1273,7 @@ textarea {
 }
 @media screen and (min-width: 1280px) {
   .registration__button {
-    margin-left: 0;
+    margin-left: 0px;
   }
 }
 
@@ -1389,5 +1391,46 @@ textarea {
 @media screen and (min-width: 1280px) {
   .contact__button {
     margin-bottom: 38px;
+  }
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer {
+    background-repeat: no-repeat;
+    background-position: 50% 18px;
+    background-size: 60px 40px;
+    background-image: url(../images/colorful-and-tasty-donuts-mobile.png);
+  }
+}
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../images/colorful-and-tasty-donuts-mobile@2x.png);
+  }
+}
+.footer__address {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link {
+  color: #3c322d;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #f3848c;
+}
+.footer__icon {
+  vertical-align: middle;
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
