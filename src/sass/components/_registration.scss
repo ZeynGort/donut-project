@@ -37,27 +37,28 @@
       padding: 40px 40px 40px 62px;
 
       background-color: #fff;
-      background-size: 570px, auto, contain, contain;
+      background-size: 100px, 570px auto, contain, contain;
       background-repeat: no-repeat;
-      background-position: left, right, right;
-      background-image: url(../images/registration/cloud.png),
-        linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+      background-position: 23px 150px, left, right, right;
+      background-image: url(../images/registration/colorful-and-tasty-donut-tablet.png),
+        url(../images/registration/cloud.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
         url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
       @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/registration/cloud@2x.png),
-          linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        background-image: url(../images/registration/colorful-and-tasty-donuts-tablet@2x.png),
+          url(../images/registration/cloud@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
           url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
       }
     }
     @media screen and (min-width: $desktop) {
       padding: 40px 40px 40px 214px;
-      background-size: 972px, auto, contain, contain;
-      background-image: url(../images/registration/cloudBig.png),
-        linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+      background-size: 200px, 972px auto, contain, contain;
+      background-position: 15px 97px, left, right, right;
+      background-image: url(../images/registration/colorful-and-tasty-donuts-desktop.png),
+        url(../images/registration/cloudBig.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
         url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
       @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/registration/cloudBig@2x.png),
-          linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        background-image: url(../images/registration/colorful-and-tasty-donuts-desktop@2x.png),
+          url(../images/registration/cloudBig@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
           url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
       }
     }
@@ -81,6 +82,15 @@
     }
   }
   &__form {
+    display: flex;
+    align-items: center;
+    &:invalid button {
+      pointer-events: none;
+      border-color: #ffd1d4bd;
+      background-color: #ffd1d4bd;
+    }
+  }
+  &__form-box {
     border-top: 1px solid #fff;
     @media screen and (min-width: $tablet) {
       border-top: none;
