@@ -4,23 +4,56 @@
     <div class="registration__box">
       <h3 class="registration__date-time"><time datetime="2024-05-23T11:00">May 23, 11:00</time><br />New York</h3>
       <form class="registration__form">
-        <h3 class="registration__form-head">Apply your personal info for registration</h3>
-        <ul class="registration__list-field">
-          <li class="registration__field">
-            <label for="name" class="registration__label"></label>
-            <input id="name" type="text" class="registration__input" name="name" placeholder="Your name" />
-          </li>
-          <li class="registration__field">
-            <label for="tel" class="registration__label"></label>
-            <input id="tel" type="tel" class="registration__input" name="number" placeholder="Phone number" />
-          </li>
-          <li class="registration__field">
-            <label for="mail" class="registration__label"></label>
-            <input id="mail" type="email" class="registration__input" name="email" placeholder="Email" />
-          </li>
-        </ul>
+        <div class="registration__form-box">
+          <h3 class="registration__form-head">Apply your personal info for registration</h3>
+          <ul class="registration__list-field">
+            <li class="registration__field">
+              <label for="name" class="registration__label"></label>
+              <input
+                id="name"
+                type="text"
+                class="registration__input"
+                name="name"
+                placeholder="Your name"
+                required
+                minlength="3"
+                maxlength="20"
+                pattern="[a-zA-Z]+"
+                title="Введіть лише літери англійського алфавіту."
+              />
+            </li>
+            <li class="registration__field">
+              <label for="tel" class="registration__label"></label>
+              <input
+                id="tel"
+                type="tel"
+                class="registration__input"
+                name="number"
+                placeholder="Phone number"
+                required
+                minlength="10"
+                maxlength="13"
+                pattern="[0-9]+"
+              />
+            </li>
+            <li class="registration__field">
+              <label for="mail" class="registration__label"></label>
+              <input
+                id="mail"
+                type="email"
+                class="registration__input"
+                name="email"
+                placeholder="Email"
+                required
+                minlength="6"
+                maxlength="30"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="button registration__button" aria-label="to registration">Register</button>
       </form>
-      <a class="button registration__button" aria-label="to registration">Register</a>
     </div>
   </div>
 </section>
