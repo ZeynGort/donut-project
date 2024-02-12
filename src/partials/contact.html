@@ -1,0 +1,54 @@
+<section class="contact section" id="contact">
+  <div class="container contact__container">
+    <form class="contact__form">
+      <h2 class="contact__head">Contact</h2>
+      <p class="contact__text">We will answer any question!</p>
+      <label class="contact__label">
+        <input
+          type="email"
+          name="email"
+          class="contact__input"
+          placeholder="Email"
+          required
+          pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+          title="example@gmail.com"
+        />
+      </label>
+      <label class="contact__label">
+        <input
+          type="text"
+          name="question"
+          class="contact__input"
+          placeholder="Type your question"
+          minlength="10"
+          title="More than 10 characters are required"
+          required
+        />
+      </label>
+      <button type="submit" class="button contact__button">Send</button>
+    </form>
+    <ul class="socials socials--under">
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="16" height="16">
+            <use href="./images/svg/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="16" height="16">
+            <use href="./images/svg/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="16" height="16">
+            <use href="./images/svg/icons.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

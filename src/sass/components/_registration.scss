@@ -1,0 +1,191 @@
+.registration {
+  &__container {
+    @media screen and (min-width: $desktop) {
+      width: 1034px;
+    }
+  }
+  &__head {
+    margin-bottom: 28px;
+
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: 1.21;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 8px 32px;
+
+    border-radius: 10px;
+    color: $white-color;
+    background-color: rgba(61, 44, 44, 0.6);
+    background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
+      url(../images/registration/topping-on-strawberry-donuts-mobile.jpg);
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
+        url(../images/registration/topping-on-strawberry-donuts-mobile@2x.jpg);
+    }
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      padding: 40px 40px 40px 62px;
+
+      background-color: #fff;
+      background-size: 100px, 570px auto, contain, contain;
+      background-repeat: no-repeat;
+      background-position: 23px 150px, left, right, right;
+      background-image: url(../images/registration/colorful-and-tasty-donut-tablet.png),
+        url(../images/registration/cloud.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/registration/colorful-and-tasty-donuts-tablet@2x.png),
+          url(../images/registration/cloud@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+          url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 40px 40px 40px 214px;
+      background-size: 200px, 972px auto, contain, contain;
+      background-position: 15px 97px, left, right, right;
+      background-image: url(../images/registration/colorful-and-tasty-donuts-desktop.png),
+        url(../images/registration/cloudBig.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+        url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/registration/colorful-and-tasty-donuts-desktop@2x.png),
+          url(../images/registration/cloudBig@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+          url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+      }
+    }
+  }
+  &__date-time {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      color: $main-text-color;
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-right: 28px;
+    }
+  }
+  &__form {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+    align-items: center;
+    &:invalid button {
+      pointer-events: none;
+      border-color: #ffd1d4bd;
+      background-color: #ffd1d4bd;
+    }
+  }
+  &__form-box {
+    border-top: 1px solid #fff;
+    @media screen and (min-width: $tablet) {
+      border-top: none;
+      border-left: 1px solid $main-text-color;
+      padding-left: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: 28px;
+    }
+  }
+  &__form-head {
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+      color: $main-text-color;
+      margin-top: 0;
+      width: 200px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 268px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  &__list-field {
+    margin-top: 20px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 24px;
+    }
+  }
+  &__field {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__input {
+    color: $white-color;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $white-color;
+    @media screen and (min-width: $tablet) {
+      width: 250px;
+      border-bottom: 1px solid $main-text-color;
+      color: $main-text-color;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 212px;
+    }
+
+    &::placeholder {
+      color: $white-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      text-align: left;
+      @media screen and (min-width: $tablet) {
+        color: #0000005e;
+      }
+    }
+
+    &:not(:placeholder-shown):focus {
+      border-bottom-color: orange;
+    }
+    &:not(:placeholder-shown):invalid:not(:focus) {
+      border-bottom-color: red;
+    }
+    &:not(:placeholder-shown):valid:not(:focus) {
+      border-bottom-color: green;
+    }
+  }
+  &__button {
+    margin: 32px auto 0px auto;
+    cursor: pointer;
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 0px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<section class="section registration" id="registration">
+  <div class="container registration__container">
+    <h2 class="registration__head">Registration</h2>
+    <div class="registration__box">
+      <h3 class="registration__date-time"><time datetime="2024-05-23T11:00">May 23, 11:00</time><br />New York</h3>
+      <form class="registration__form">
+        <div class="registration__form-box">
+          <h3 class="registration__form-head">Apply your personal info for registration</h3>
+          <ul class="registration__list-field">
+            <li class="registration__field">
+              <label for="name" class="registration__label"></label>
+              <input
+                id="name"
+                type="text"
+                class="registration__input"
+                name="name"
+                placeholder="Your name"
+                required
+                pattern="[a-ZA-Zа-яА-ЯіІїЇ]{35}"
+                title="Please enter your name"
+              />
+            </li>
+            <li class="registration__field">
+              <label for="tel" class="registration__label"></label>
+              <input
+                id="tel"
+                type="tel"
+                class="registration__input"
+                name="number"
+                placeholder="Phone number"
+                required
+                pattern="[+]38[0-9]{10}"
+                title="+XX XXX XXX XX XX"
+              />
+            </li>
+            <li class="registration__field">
+              <label for="mail" class="registration__label"></label>
+              <input
+                id="mail"
+                type="email"
+                class="registration__input"
+                name="email"
+                placeholder="Email"
+                required
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                title="example@gmail.com"
+              />
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="button registration__button" aria-label="to registration">Register</button>
+      </form>
+    </div>
+  </div>
+</section>

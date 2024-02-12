@@ -1,0 +1,1478 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #3c322d;
+  margin: 0;
+  background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  body {
+    background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  }
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+main {
+  background-image: url("../images/donuts-bg-mobile.png");
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  main {
+    background-image: url("../images/donuts-bg-mobile@2x.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url("../images/donuts-bg-desktop.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  main {
+    background-image: url("../images/donuts-bg-desktop@2x.png");
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding-inline: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-inline: 32px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-inline: 16px;
+    max-width: 1280px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(243, 132, 139, 0.3254901961);
+  border: 1px solid rgba(234, 116, 124, 0.568627451);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(243, 132, 139, 0.6705882353);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    padding: 36px 16px;
+  }
+}
+.header__link-logo {
+  position: relative;
+  z-index: 2;
+}
+.header__svg-logo {
+  width: 106px;
+  height: 46px;
+}
+@media screen and (min-width: 1280px) {
+  .header__svg-logo {
+    width: 158px;
+    height: 70px;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    padding: 24px 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    margin-right: 51px;
+  }
+}
+.header__button {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (min-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__button:focus {
+  color: #f3848c;
+}
+.header__svg {
+  display: block;
+  fill: currentColor;
+  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__svg[open=true] {
+  display: none;
+}
+.header__svg[close=true] {
+  display: none;
+}
+@media screen and (max-width: 1279.98px) {
+  .header__box-menu {
+    transform: translate(-101%, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .header__box-menu.open {
+    padding: 8px 10px;
+    transform: translate(0, 0);
+    background-size: cover;
+    background-color: #e5e2e3;
+    background-image: url("../images/donuts-bg-mobile.png");
+  }
+}
+@media screen and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 1279.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (max-width: 1279.98px) and (min-resolution: 2dppx) {
+  .header__box-menu.open {
+    background-image: url("../images/donuts-bg-mobile@2x.png");
+  }
+}
+.header__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 112px;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    padding-top: 140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__list {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+.header__link {
+  display: inline-block;
+  color: #3c322d;
+  padding: 10px 28px;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 1280px) {
+  .header__link {
+    padding: 4px 8px;
+  }
+}
+.header__link:hover, .header__link:focus {
+  color: #ffffff;
+  box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+  background: linear-gradient(180deg, rgba(248, 110, 103, 0.63), rgba(253, 86, 143, 0.86) 100%);
+}
+
+.container--upper {
+  max-width: 320px;
+  width: 100%;
+  padding-top: 86px;
+  padding-bottom: 8px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767.98px) {
+  .container--upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--upper {
+    margin: 0;
+    max-width: 768px;
+    padding-top: 98px;
+    padding-bottom: 43px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container--upper {
+    max-width: 1280px;
+    padding-top: 170px;
+    padding-bottom: 90px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #f3848c;
+  box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.4509803922);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  color: #f3848c;
+  background-color: #ffffff;
+  border: 1px solid #f3848c;
+}
+.button:active {
+  background-color: #f3848c;
+  color: #ffffff;
+  border: 1px solid #f3848c;
+  box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.2509803922) inset;
+}
+
+.hero {
+  background-image: url("../images/hero/glazed-donuts-in-boxes-mobile.jpg");
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/glazed-donuts-in-boxes-desktop@2x.jpg");
+  }
+}
+.hero__head {
+  width: 280px;
+  font-family: Montserrat Alternates;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__head {
+    width: 320px;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__head {
+    width: 758px;
+    font-size: 60px;
+    line-height: 1.08;
+  }
+}
+.hero__text {
+  padding-top: 18px;
+  padding-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    padding-top: 10px;
+    padding-bottom: 24px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    padding-top: 20px;
+    padding-bottom: 28px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.socials {
+  max-width: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.socials__icon {
+  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
+  fill: #f3848c;
+}
+.socials--upper {
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .socials--upper {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .socials--upper {
+    margin-top: 32px;
+  }
+}
+
+.about {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    margin-top: 64px;
+  }
+}
+.about__container {
+  display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    gap: 32px;
+  }
+}
+.about__image-box {
+  display: flex;
+}
+.about__image {
+  width: 280px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .about__image {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__image {
+    width: 608px;
+  }
+}
+.about__head {
+  margin-bottom: 8px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  .about__head {
+    margin-top: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__head {
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: left;
+  }
+}
+.about__text {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.about__text:not(:last-child) {
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.about__shown-content {
+  display: flex;
+  flex-direction: column;
+}
+.about__shown-content-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.about__shown-content-input:checked + .about__shown-content-text {
+  display: block;
+}
+.about__shown-content-input:checked ~ .about__shown-content-label .about__shown-content-close-text {
+  display: block;
+}
+.about__shown-content-input:checked ~ .about__shown-content-label .about__shown-content-open-text {
+  display: none;
+}
+.about__shown-content-text {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .about__shown-content-text {
+    display: block;
+  }
+}
+.about__shown-content-label {
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__shown-content-label:hover, .about__shown-content-label:focus {
+  color: #f3848c;
+}
+@media screen and (min-width: 1280px) {
+  .about__shown-content-label {
+    display: none;
+  }
+}
+.about__shown-content-close-text {
+  display: none;
+}
+.about__shown-content-close-text, .about__shown-content-open-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 768px) {
+  .about__shown-content-close-text, .about__shown-content-open-text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.program__container {
+  display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .program__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .program__container {
+    gap: 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__container {
+    gap: 118px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .program__text-box {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .program__text-box {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__text-box {
+    width: 418px;
+  }
+}
+.program__head {
+  margin-bottom: 8px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .program__head {
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__head {
+    margin-bottom: 24px;
+  }
+}
+.program__text {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (min-width: 1280px) {
+  .program__text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.program__list {
+  margin: 8px 0px 14px;
+}
+@media screen and (min-width: 768px) {
+  .program__list {
+    margin: 12px 0px 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__list {
+    margin: 20px 0px;
+  }
+}
+.program__item {
+  display: flex;
+}
+.program__item::before {
+  content: "";
+  background: url(../images/svg/chef.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  padding: 12px;
+}
+.program__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .program__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.program__shown-content {
+  display: flex;
+  flex-direction: column;
+}
+.program__shown-content-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.program__shown-content-input:checked + .program__shown-content-text {
+  display: block;
+}
+.program__shown-content-input:checked ~ .program__shown-content-label .program__shown-content-close-text {
+  display: block;
+}
+.program__shown-content-input:checked ~ .program__shown-content-label .program__shown-content-open-text {
+  display: none;
+}
+.program__shown-content-text {
+  display: none;
+}
+@media screen and (max-width: 1279.98px) {
+  .program__shown-content-text {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__shown-content-text {
+    display: block;
+  }
+}
+.program__shown-content-label {
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.program__shown-content-label:hover, .program__shown-content-label:focus {
+  color: #f3848c;
+}
+@media screen and (min-width: 1280px) {
+  .program__shown-content-label {
+    display: none;
+  }
+}
+.program__shown-content-close-text {
+  display: none;
+}
+.program__shown-content-close-text, .program__shown-content-open-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 768px) {
+  .program__shown-content-close-text, .program__shown-content-open-text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.program__image-box {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program__image-box {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-box {
+    gap: 138px;
+  }
+}
+.program__image-list--right {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program__image-list--right {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-list--right {
+    padding-top: 60px;
+  }
+}
+.program__image-list--left {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program__image-list--left {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-list--left {
+    padding-bottom: 60px;
+  }
+}
+.program__image-item {
+  width: 130px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #f3848c;
+  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+}
+@media screen and (min-width: 768px) {
+  .program__image-item {
+    width: 152px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-item {
+    width: 288px;
+  }
+}
+.program__image-item:first-child {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .program__image-item:first-child {
+    margin-bottom: 40px;
+  }
+}
+.program__image-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(156, 156, 156, 0) 43.4%, #000 112%);
+}
+.program__image-overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 28px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .program__image-overlay {
+    bottom: 32px;
+  }
+}
+.program__image-head {
+  margin-bottom: 8px;
+  font-family: Montserrat Alternates;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .program__image-head {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-head {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.program__image-text {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .program__image-text {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__image-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.speakers__heder {
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .speakers__heder {
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+.speakers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .speakers__list {
+    gap: 32px;
+  }
+}
+.speakers__item {
+  flex-basis: calc((100% - 20px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .speakers__item {
+    flex-basis: calc((100% - 96px) / 4);
+  }
+}
+.speakers__name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .speakers__name {
+    font-size: 18px;
+    line-height: 1.22;
+    margin-top: 20px;
+  }
+}
+.speakers__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .speakers__text {
+    font-size: 14px;
+    line-height: 1.21;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .speakers__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.price__head {
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .price__head {
+    font-size: 32px;
+    line-height: 1.21;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__head {
+    margin-bottom: 28px;
+  }
+}
+.price__list-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .price__list-box {
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__list-box {
+    gap: 32px;
+  }
+}
+.price__item {
+  position: relative;
+  padding: 20px 18px 95px 8px;
+  border-radius: 25px;
+  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+  background-color: rgb(250, 251, 251);
+  background-image: url(../images/price/colorful-and-tasty-donuts-mobile.png);
+  background-size: 200px, contain;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 95px;
+  flex-basis: 100%;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__item {
+    background-size: 300px, contain;
+    background-image: url(../images/price/colorful-and-tasty-donuts-desktop.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .price__item {
+    background-image: url(../images/price/colorful-and-tasty-donuts-desktop@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price__item {
+    flex-basis: calc((100% - 28px) / 3);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price__item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+.price__item:focus, .price__item:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(243, 132, 140);
+}
+.price__subscription {
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-align: center;
+  margin: 20px 0;
+}
+@media screen and (min-width: 1280px) {
+  .price__subscription {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 28px 0 40px;
+  }
+}
+.price__line {
+  display: flex;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .price__line {
+    margin-bottom: 14px;
+  }
+}
+.price__line::before {
+  content: " ";
+  padding: 12px;
+  margin-right: 10px;
+  background: url(../images/svg/chef.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+@media screen and (min-width: 1280px) {
+  .price__line::before {
+    margin-right: 16px;
+  }
+}
+.price__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: left;
+}
+.price__button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.reviews__profile .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+  .registration__container {
+    width: 1034px;
+  }
+}
+.registration__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__head {
+    font-size: 32px;
+    line-height: 1.21;
+  }
+}
+.registration__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 8px 32px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(61, 44, 44, 0.6);
+  background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/topping-on-strawberry-donuts-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__box {
+    flex-direction: row;
+    padding: 40px 40px 40px 62px;
+    background-color: #fff;
+    background-size: 100px, 570px auto, contain, contain;
+    background-repeat: no-repeat;
+    background-position: 23px 150px, left, right, right;
+    background-image: url(../images/registration/colorful-and-tasty-donut-tablet.png), url(../images/registration/cloud.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/colorful-and-tasty-donuts-tablet@2x.png), url(../images/registration/cloud@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__box {
+    padding: 40px 40px 40px 214px;
+    background-size: 200px, 972px auto, contain, contain;
+    background-position: 15px 97px, left, right, right;
+    background-image: url(../images/registration/colorful-and-tasty-donuts-desktop.png), url(../images/registration/cloudBig.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .registration__box {
+    background-image: url(../images/registration/colorful-and-tasty-donuts-desktop@2x.png), url(../images/registration/cloudBig@2x.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/registration/topping-on-strawberry-donuts-desktop@2x.jpg);
+  }
+}
+.registration__date-time {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__date-time {
+    color: #3c322d;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__date-time {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 28px;
+  }
+}
+.registration__form {
+  display: flex;
+  align-items: center;
+}
+.registration__form:invalid button {
+  pointer-events: none;
+  border-color: rgba(255, 209, 212, 0.7411764706);
+  background-color: rgba(255, 209, 212, 0.7411764706);
+}
+.registration__form-box {
+  border-top: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .registration__form-box {
+    border-top: none;
+    border-left: 1px solid #3c322d;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form-box {
+    padding-left: 28px;
+  }
+}
+.registration__form-head {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .registration__form-head {
+    text-align: left;
+    color: #3c322d;
+    margin-top: 0;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__form-head {
+    width: 268px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.registration__list-field {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__list-field {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__list-field {
+    margin-top: 24px;
+  }
+}
+.registration__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__field:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.registration__input {
+  color: #ffffff;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .registration__input {
+    width: 250px;
+    border-bottom: 1px solid #3c322d;
+    color: #3c322d;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__input {
+    width: 212px;
+  }
+}
+.registration__input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+.registration__input::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .registration__input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+  .registration__input::placeholder {
+    color: rgba(0, 0, 0, 0.368627451);
+  }
+}
+.registration__input:not(:-moz-placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.registration__input:not(:placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.registration__input:not(:-moz-placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.registration__input:not(:placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.registration__input:not(:-moz-placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+.registration__input:not(:placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+.registration__button {
+  margin-top: 32px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .registration__button {
+    margin-top: 0;
+    margin-left: 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__button {
+    margin-left: 0px;
+  }
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form:invalid button {
+  pointer-events: none;
+  border-color: rgba(255, 209, 212, 0.7411764706);
+  background-color: rgba(255, 209, 212, 0.7411764706);
+}
+.contact__head {
+  margin-bottom: 28px;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__head {
+    font-size: 32px;
+  }
+}
+.contact__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__text {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.contact__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.contact__input {
+  width: 280px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c322d;
+}
+.contact__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__input:not(:-moz-placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:placeholder-shown):focus {
+  border-bottom-color: orange;
+}
+.contact__input:not(:-moz-placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:placeholder-shown):invalid:not(:focus) {
+  border-bottom-color: red;
+}
+.contact__input:not(:-moz-placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+.contact__input:not(:placeholder-shown):valid:not(:focus) {
+  border-bottom-color: green;
+}
+@media screen and (min-width: 768px) {
+  .contact__input {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__input {
+    width: 394px;
+  }
+}
+.contact__button {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .contact__button {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__button {
+    margin-bottom: 38px;
+  }
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer {
+    background-repeat: no-repeat;
+    background-position: 50% 18px;
+    background-size: 60px 40px;
+    background-image: url(../images/colorful-and-tasty-donuts-mobile.png);
+  }
+}
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../images/colorful-and-tasty-donuts-mobile@2x.png);
+  }
+}
+.footer__address {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link {
+  color: #3c322d;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #f3848c;
+}
+.footer__icon {
+  vertical-align: middle;
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

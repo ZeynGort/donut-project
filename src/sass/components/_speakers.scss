@@ -1,0 +1,62 @@
+.speakers {
+  &__heder {
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: 1.21;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media screen and (min-width: $tablet) {
+      gap: 32px;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 20px) / 2);
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 3 * 32px) / 4);
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+
+    margin-top: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.22;
+      margin-top: 20px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+
+    margin-top: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.21;
+      margin-top: 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
