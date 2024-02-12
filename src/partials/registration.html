@@ -16,10 +16,8 @@
                 name="name"
                 placeholder="Your name"
                 required
-                minlength="3"
-                maxlength="20"
-                pattern="[a-zA-Z]+"
-                title="Введіть лише літери англійського алфавіту."
+                pattern="[a-ZA-Zа-яА-ЯіІїЇ]{35}"
+                title="Please enter your name"
               />
             </li>
             <li class="registration__field">
@@ -31,9 +29,8 @@
                 name="number"
                 placeholder="Phone number"
                 required
-                minlength="10"
-                maxlength="13"
-                pattern="[0-9]+"
+                pattern="[+]38[0-9]{10}"
+                title="+XX XXX XXX XX XX"
               />
             </li>
             <li class="registration__field">
@@ -45,9 +42,8 @@
                 name="email"
                 placeholder="Email"
                 required
-                minlength="6"
-                maxlength="30"
-                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                title="example@gmail.com"
               />
             </li>
           </ul>

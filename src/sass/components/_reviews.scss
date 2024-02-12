@@ -1,0 +1,162 @@
+.reviews{
+  &__head{
+    margin-bottom: 22px;
+
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+    }
+  }
+
+  &__profile .slick-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon{
+    margin-block: 8px;
+  }
+
+  &__name{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: 0em;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__bottom-slider{
+    margin-block: 8px 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-block: 28px 22px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+      margin-block: 28px;
+    }
+  }
+
+  &__text{
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-inline: 100px;
+
+        font-size: 18px;
+        line-height: 1.22;
+    }
+  }
+
+  &__slider-nav{
+    max-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+  }
+    
+  &__slider-butt{
+    padding-block: 10px;
+    border: none;
+    background-color: transparent;
+    
+    
+    &--color{
+      width: 35px;
+      height: 4px;
+      background-color: $selection-color;
+    }
+  }
+}
+.slick-track{
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.reviews__profile {
+  & .reviews__image{
+    cursor: pointer;
+    
+    transition: box-shadow $timing-function;
+  
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  & .slick-current {
+
+    & .reviews__image {
+      border-radius: 50%;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  @media screen and (max-width: $pre-desktop) {
+    .top-slider {
+      position: relative;
+      right: 76px;
+      width: 860px;
+    }
+  }
+
+  .top-slider{
+    min-height: 470px;
+  }
+  
+  .reviews__profile{
+    
+    & .slick-current{
+      margin-top: 70px;
+    
+      transition: margin-top $timing-function;
+    
+      & .reviews__image{
+        width: 336px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  
+  .top-slider {
+    position: relative;
+    right: 16px;
+    width: 1280px;
+    min-height: 600px;
+  }
+
+  .reviews__profile {
+
+    & .slick-current {
+      margin-top: 142px;
+
+      transition: margin-top $timing-function;
+
+      & .reviews__image {
+        width: 394px;
+      }
+    }
+  }
+}
