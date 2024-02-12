@@ -82,7 +82,9 @@
     }
   }
   &__form {
-    display: flex;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
     align-items: center;
     &:invalid button {
       pointer-events: none;
@@ -164,9 +166,19 @@
         color: #0000005e;
       }
     }
+
+    &:not(:placeholder-shown):focus {
+      border-bottom-color: orange;
+    }
+    &:not(:placeholder-shown):invalid:not(:focus) {
+      border-bottom-color: red;
+    }
+    &:not(:placeholder-shown):valid:not(:focus) {
+      border-bottom-color: green;
+    }
   }
   &__button {
-    margin-top: 32px;
+    margin: 32px auto 0px auto;
     cursor: pointer;
     @media screen and (min-width: $tablet) {
       margin-top: 0;
