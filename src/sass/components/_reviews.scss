@@ -93,6 +93,7 @@
 .reviews__profile {
   & .reviews__image{
     cursor: pointer;
+    border-radius: 50%;
     
     transition: box-shadow $timing-function;
   
